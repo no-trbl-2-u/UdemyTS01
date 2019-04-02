@@ -50,10 +50,10 @@ write("enum - Color value", String(myColor));
 write("", breakPage());
 //_____________________________________________
 // any
-var car = "BMW";
-car = { brand: "BMW", series: 3 }; // Error w/o any
-write("any type", car.brand);
-write("any type", car.series);
+var carAny = "BMW";
+carAny = { brand: "BMW", series: 3 }; // Error w/o any
+write("any type", carAny.brand);
+write("any type", carAny.series);
 write("", breakPage());
 //_____________________________________________
 // functions            | basic Usage |

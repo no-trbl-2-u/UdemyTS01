@@ -54,10 +54,10 @@ write("", breakPage())
 //_____________________________________________
 
 // any
-let car: any = "BMW"
-car = {brand: "BMW", series: 3} // Error w/o any
-write("any type", car.brand)
-write("any type", car.series)
+let carAny: any = "BMW"
+carAny = {brand: "BMW", series: 3} // Error w/o any
+write("any type", carAny.brand)
+write("any type", carAny.series)
 write("", breakPage())
 //_____________________________________________
 
