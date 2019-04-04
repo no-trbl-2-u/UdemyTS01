@@ -1,3 +1,6 @@
+// Imported module
+// import main from './importMe'
+
 // Utilities
 // ###################################
 // Create <br>
@@ -183,3 +186,10 @@ let canThisBeAny = null
 canThisBeAny = 12
 
 write("null type", String(canAlsoBeNull))
+//______________________________________________________________________
+
+// Using an imported module
+write("", breakPage())
+write("______","______")
+
+// write("Thing", main())
