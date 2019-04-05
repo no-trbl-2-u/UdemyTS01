@@ -51,19 +51,19 @@ const echo2: <T>(data: T) => T = betterEcho;
 //____________________________________________________________________
 
 // Generic Classes
-class simpleMath <T extends number | string> {
-  baseValue: T;
-  multiplyValue: T;
+class simpleMath <T extends number | string, U extends number | string> {
+  baseValue!: T;
+  multiplyValue!: U;
 
   calculate() {
     return +this.baseValue * +this.multiplyValue // "+"to set to number
   }
 }
 
-const maths = new simpleMath()
+const maths = new simpleMath<string, number>()
 
-maths.baseValue = 10; // No Error
+maths.baseValue = "10"; // No Error
 maths.multiplyValue = 20;
 // console.log(maths.calculate()) // 200
-maths.baseValue = "String" // Compile error IF <T extends __type__>
+// maths.baseValue = "String" // Compile error IF <T extends __type__>
 console.log(maths.calculate()) // NaN (No compile Errors)

@@ -41,8 +41,8 @@ var simpleMath = /** @class */ (function () {
     return simpleMath;
 }());
 var maths = new simpleMath();
-maths.baseValue = 10; // No Error
+maths.baseValue = "10"; // No Error
 maths.multiplyValue = 20;
 // console.log(maths.calculate()) // 200
-maths.baseValue = "String"; // Compile error IF <T extends __type__>
+// maths.baseValue = "String" // Compile error IF <T extends __type__>
 console.log(maths.calculate()); // NaN (No compile Errors)
