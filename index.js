@@ -151,7 +151,7 @@ canBeNull = null; // ERROR if no "...|null"
 var canAlsoBeNull; // or _untyped_ or _any_
 canAlsoBeNull = null;
 var canThisBeAny = null;
-canThisBeAny = 12;
+// canThisBeAny = 12
 write("null type", String(canAlsoBeNull));
 //______________________________________________________________________
 // Using an imported module

@@ -183,7 +183,7 @@ let canAlsoBeNull: null; // or _untyped_ or _any_
 canAlsoBeNull = null
 
 let canThisBeAny = null
-canThisBeAny = 12
+// canThisBeAny = 12
 
 write("null type", String(canAlsoBeNull))
 //______________________________________________________________________
